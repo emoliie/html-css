@@ -20,6 +20,10 @@ body {
   background-color: #d6d3ae;
 }
 
+h1, h2, h3 {
+  font-family: 'Young Serif', serif;
+}
+
 /*header*/
 
 header {
