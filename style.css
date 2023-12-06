@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d6d3ae;
+}
+
+/*header*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  background-color: #436228;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px; 
+}
+
+header nav .logo img {
+  width: 60px;
+  height: 100%;
+}
+
+/*homepage*/
+
+.homepage {
+  background-image: url(images/loki-homepage.png);
+  width: 100vw;
+  margin-top: 82px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .homepage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.homepage .homepage-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  width: 800px;
+}
+
+.homepage .homepage-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.homepage .homepage-content a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  margin-top: 10px;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.2s;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .homepage-content a:hover {
+  box-shadow: inset 120px 0 0 0 white;
+  color: black;
+}
+
+.introduction {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  height: 70vh;
+  padding: 0 6%;
+}
+
+.introduction .introduction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.introduction .introduction-container .introduction-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.introduction .introduction-container .introduction-header p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.introduction .introduction-container p {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.learn-more {
+  width: 125px;
+  padding: 20px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  margin-top: 10px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: black;
+  outline: 2px solid black;
+}
+
+.introduction .introduction-image {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+}
+
+.curved {
+  position: relative;
+  height: 5vh;
+  z-index: -1;
+}
+
+.curved::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+}
+
+.list-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  padding: 0 70px;
+}
+
+.list-section .list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.box-icon {
+  height: 50px;
+  width: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.list-section .list-content p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+/*articles*/
+
+.article {
+  margin-top: 82px;
+}
+
+.article .article-intro {
+  padding: 100px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.article .article-intro h1 {
+  text-align: center;
+  font-size: 50px;
+  width: 70%;
+  margin: 50px;
+}
+
+.article p {
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.article .article-content {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  gap: 10px;
+}
+
+.article .article-content .article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article .article-content .article-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 900px;
+}
+
+.article .article-content .article-container img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.article .article-content aside {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #0b450a;
+  gap: 10px;
+  width: 300px;
+  padding-top: 10px;
+  margin-right: 100px;
+}
+
+.article .article-content aside a {
+  color: black;
+  transition: all 0.3s;
+}
+
+.article .article-content aside a:hover {
+  color: #d6ae2f;
+}
+
+/*footer*/
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+
+footer .separator {
+  background-color: black;
+  width: 90%;
+  height: 1px;
+  margin: 30px;
+}
+
+footer img {
+  width: 60px;
+  height: 100%;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 1400px) {
+  .introduction {
+    padding: 20px;
+  }
+
+  .introduction .introduction-image {
+    height: 400px;
+    width: 400px;
+  }
+
+  .article h1 {
+    font-size: 30px;
+    width: 1100px;
+  }
+
+  .article .article-content {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 5%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .article .article-content aside {
+    margin-top: 10%;
+    width: 90%;
+  }
+
+  .article .article-content .article-container {
+    align-items: center;
+  }
+
+  .article .article-content .article-container div {
+    width: 90%;
+  }
+
+  .article .article-content aside {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header nav {
+    padding: 10px;
+  }
+
+  .homepage {
+    margin-top: 62px;
+  }
+
+  .homepage .homepage-content {
+    max-width: 500px;
+  }
+
+  .homepage .homepage-content h1 {
+    font-size: 36px;
+  }
+
+  .introduction {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .introduction .introduction-container {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .introduction .introduction-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .list-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .list-section .list-content {
+    width: 100%;
+  }
+
+  .list-section .box-icon {
+    margin-bottom: 10px;
+  }
+
+  .list-section h3 {
+    font-size: 20px;
+  }
+
+  .article .article-intro {
+    padding: 50px 20px 30px 20px;
+  }
+
+  .article .article-intro h1 {
+    font-size: 28px;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .article .article-content h2 {
+    font-size: 20px;
+  }
+
+  .article .article-cards .card {
+    margin: 2rem 5vw;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+}
